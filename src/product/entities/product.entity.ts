@@ -8,9 +8,21 @@ export class ProductEntity {
   @Column()
   image: string;
 
-  @Column()
-  description: string;
+  @Column({ nullable: true })
+  description?: string;
 
-  @Column()
-  characteristics: string[];
+  @Column({ nullable: true })
+  color?: string;
+
+  @Column({ nullable: true })
+  country?: string;
+
+  @Column({ nullable: true })
+  recomendation?: string;
+
+  @Column({ nullable: true })
+  sizes?: string;
+
+  @Column({ nullable: true })
+  type?: string;
 }
